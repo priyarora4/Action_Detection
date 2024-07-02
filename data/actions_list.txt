@@ -1,0 +1,165 @@
+label {
+  name: "walk"
+  label_id: 1
+  label_type: POSE
+}
+label {
+  name: "sit"
+  label_id: 2
+  label_type: POSE
+}
+label {
+  name: "stand"
+  label_id: 3
+  label_type: POSE
+}
+label {
+  name: "bend/bow (at the waist)"
+  label_id: 4
+  label_type: POSE
+}
+label {
+  name: "run/jog"
+  label_id: 5
+  label_type: POSE
+}
+label {
+  name: "get up"
+  label_id: 6
+  label_type: POSE
+}
+label {
+  name: "paired(standing together with one other person)"
+  label_id: 7
+  label_type: GROUP_DYADIC_INTERACTION
+}
+label {
+  name: "huddle(standing together with 2 or more people)"
+  label_id: 8
+  label_type: GROUP_DYADIC_INTERACTION
+}
+label {
+  name: "lift/pick up"
+  label_id: 9
+  label_type: OBJECT_INTERACTION
+}
+label {
+  name: "carry/hold (an object)"
+  label_id: 10
+  label_type: OBJECT_INTERACTION
+}
+label {
+  name: "point to (an object)"
+  label_id: 11
+  label_type: OBJECT_INTERACTION
+}
+label {
+  name: "write"
+  label_id: 12
+  label_type: OBJECT_INTERACTION
+}
+label {
+  name: "read"
+  label_id: 13
+  label_type: OBJECT_INTERACTION
+}
+label {
+  name: "put down"
+  label_id: 14
+  label_type: OBJECT_INTERACTION
+}
+label {
+  name: "watch (object)"
+  label_id: 15
+  label_type: OBJECT_INTERACTION
+}
+label {
+  name: "talk to"
+  label_id: 16
+  label_type: PERSON_INTERACTION
+}
+label {
+  name: "listen"
+  label_id: 17
+  label_type: PERSON_INTERACTION
+}
+label {
+  name: "watch (person)"
+  label_id: 18
+  label_type: PERSON_INTERACTION
+}
+label {
+  name: "gesture (a person)"
+  label_id: 19
+  label_type: PERSON_INTERACTION
+}
+label {
+  name: "give/serve (an object) to (a person)"
+  label_id: 20
+  label_type: PERSON_INTERACTION
+}
+label {
+  name: "take (an object) from (a person)"
+  label_id: 21
+  label_type: PERSON_INTERACTION
+}
+label {
+  name: "face to face"
+  label_id: 22
+  label_type: PERSON_INTERACTION
+}
+label {
+  name: "hi 5"
+  label_id: 23
+  label_type: PERSON_INTERACTION
+}
+label {
+  name: "face to face"
+  label_id: 24
+  label_type: PERSON_INTERACTION
+}
+label {
+  name: "laugh"
+  label_id: 25
+  label_type: INDIVIDUAL_AFFECT
+}
+label {
+  name: "smile"
+  label_id: 26
+  label_type: INDIVIDUAL_AFFECT
+}
+label {
+  name: "stressed"
+  label_id: 27
+  label_type: INDIVIDUAL_AFFECT
+}
+label {
+  name: "annoyed/frustrated"
+  label_id: 28
+  label_type: INDIVIDUAL_AFFECT
+}
+label {
+  name: "take (an object) from (robot)"
+  label_id: 29
+  label_type: ROBOT_INTERACTION
+}
+label {
+  name: "give/serve (an object) to (robot)"
+  label_id: 30
+  label_type: ROBOT_INTERACTION
+}
+label {
+  name: "talk to (robot)"
+  label_id: 31
+  label_type: ROBOT_INTERACTION
+}
+label {
+  name: "listen to (robot)"
+  label_id: 32
+  label_type: ROBOT_INTERACTION
+}
+label {
+  name: "watch (robot)"
+  label_id: 33
+  label_type: ROBOT_INTERACTION
+}
