@@ -1,12 +1,12 @@
 TRAIN:
   ENABLE: False
   DATASET: ava
-  BATCH_SIZE: 16
+  BATCH_SIZE: 2 #16
   EVAL_PERIOD: 1
   CHECKPOINT_PERIOD: 1
   AUTO_RESUME: True
-  # CHECKPOINT_FILE_PATH: path to pretrain model
-  CHECKPOINT_TYPE: pytorch
+  CHECKPOINT_FILE_PATH: "/home/exouser/Downloads/Action_Detection_Proj/Action_Detection/pretrained_checkpoints/SLOWFAST_32x2_R101_50_50.pkl"
+  CHECKPOINT_TYPE: caffe2 #pytorch
 DATA:
   NUM_FRAMES: 32
   SAMPLING_RATE: 2
@@ -14,13 +14,21 @@ DATA:
   TRAIN_CROP_SIZE: 224
   TEST_CROP_SIZE: 256
   INPUT_CHANNEL_NUM: [3, 3]
+  PATH_TO_DATA_DIR: "/home/exouser/Downloads/Action_Detection_Proj/Action_Detection/data"
+  PATH_PREFIX: "/home/exouser/Downloads/Action_Detection_Proj/Action_Detection/data/frames"
+  ANNOTATION_DIR: "/home/exouser/Downloads/Action_Detection_Proj/Action_Detection/data/annotations"
 DETECTION:
   ENABLE: True
   ALIGNED: False
 AVA:
   BGR: False
   DETECTION_SCORE_THRESH: 0.8
-  TEST_PREDICT_BOX_LISTS: ["person_box_67091280_iou90/ava_detection_val_boxes_and_labels.csv"]
+  TEST_PREDICT_BOX_LISTS: ["ava_val_predicted_boxes.csv"]
+  FRAME_DIR: "/home/exouser/Downloads/Action_Detection_Proj/Action_Detection/data/frames"
+  FRAME_LIST_DIR: "/home/exouser/Downloads/Action_Detection_Proj/Action_Detection/data/frame_lists"
+  ANNOTATION_DIR: "/home/exouser/Downloads/Action_Detection_Proj/Action_Detection/data/annotations"
+  LABEL_MAP_FILE: "actions_list.txt"
+  TRAIN_PREDICT_BOX_LISTS: ["ava_train_predicted_boxes.csv"]
 SLOWFAST:
   ALPHA: 4
   BETA_INV: 8
@@ -58,11 +66,11 @@ MODEL:
 TEST:
   ENABLE: True
   DATASET: ava
-  BATCH_SIZE: 8
+  BATCH_SIZE: 2
 DATA_LOADER:
   NUM_WORKERS: 2
   PIN_MEMORY: True
-NUM_GPUS: 8
+NUM_GPUS: 1
 NUM_SHARDS: 1
 RNG_SEED: 0
 OUTPUT_DIR: .
