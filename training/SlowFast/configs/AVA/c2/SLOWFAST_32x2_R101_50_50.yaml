@@ -16,7 +16,6 @@ DATA:
   INPUT_CHANNEL_NUM: [3, 3]
   PATH_TO_DATA_DIR: "/home/exouser/Downloads/Action_Detection_Proj/Action_Detection/data"
   PATH_PREFIX: "/home/exouser/Downloads/Action_Detection_Proj/Action_Detection/data/frames"
-  ANNOTATION_DIR: "/home/exouser/Downloads/Action_Detection_Proj/Action_Detection/data/annotations"
 DETECTION:
   ENABLE: True
   ALIGNED: False
